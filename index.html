@@ -1,81 +1,51 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>我的游戏作品集</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-    header {
-      background: #222;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    .game-card {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      margin-bottom: 1.5rem;
-      padding: 1rem 1.5rem;
-    }
-    .game-card h2 {
-      margin-top: 0;
-    }
-    .game-card a {
-      display: inline-block;
-      margin-top: 0.5rem;
-      background: #007BFF;
-      color: #fff;
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      color: #777;
-    }
-  </style>
+  <title>Charles Wang - Pixel Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
 </head>
 <body>
+  <div class="container">
+    <!-- Header -->
+    <section class="header">
+      <img src="image.png" alt="Avatar" class="avatar">
+      <h1>CHARLES WANG</h1>
+      <p class="subtitle">独立游戏制作作者 / 游戏机制实验者</p>
+    </section>
 
-  <header>
-    <h1>Hi，我是Huayu Wang</h1>
-    <p>这是我的小游戏作品集</p>
-  </header>
+    <!-- About Me -->
+    <section class="about">
+      <h2>ABOUT ME</h2>
+      <p>
+        I am a creator passionate about designing game mechanics, enjoying exploring complex interactions 
+        with minimalistic rules. My works focus on “information asymmetry,” “psychological games,” and “creative gameplay.”
+      </p>
+    </section>
 
-  <main>
-    <div class="game-card">
-      <h2>隐藏国王象棋</h2>
-      <p>一款基于信息差的创新象棋玩法，支持联机对战。</p>
-      <a href="https://chesscarnival.netlify.app/" target="_blank">试玩游戏</a>
-    </div>
-
-    <div class="game-card">
-      <h2>钢琴记忆挑战</h2>
-      <p>听旋律后模仿演奏的节奏类小游戏，锻炼听觉记忆。</p>
-      <a href="https://your-game-link2.com" target="_blank">进入游戏</a>
-    </div>
-
-    <!-- 你可以继续添加更多游戏 -->
-
-  </main>
-
-  <footer>
-    <p>联系我：<a href="mailto:your@email.com">your@email.com</a> | <a href="https://github.com/swedenfish" target="_blank">GitHub</a></p>
-  </footer>
-
+    <!-- My Works -->
+    <section class="works">
+      <h2>MY WORKS</h2>
+      <div class="game-list">
+        <div class="game-card">
+          <h3>HIDDEN KING CHESS</h3>
+          <p>An innovative chess game based on information asymmetry.</p>
+          <a href="https://chesscarnival.netlify.app/" class="play-btn">PLAY GAME</a>
+        </div>
+        <div class="game-card">
+          <h3>TCUBE</h3>
+          <p>Seems like ordinary Tic-Tac-Toe, but each move makes the earliest one disappear—memory and strategy collide.</p>
+          <a href="https://tcube-game.netlify.app/" class="play-btn">PLAY GAME</a>
+        </div>
+        <div class="game-card">
+          <h3>WAVELENGTH</h3>
+          <p>Multiplayer cooperative psychological guessing game. Remotely battle your friends.</p>
+          <a href="https://wavelength-game.netlify.app/" class="play-btn">PLAY GAME</a>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
